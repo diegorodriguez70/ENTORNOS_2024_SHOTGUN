@@ -4,9 +4,7 @@ public class Cliente {
 
 	private String nombre;
     private String apellido;
-    private String direccion;
-    private String ciudad;
-    private String codigoPostal;
+    private Direccion direccion;
 
     // Getters y setters
 
@@ -18,17 +16,7 @@ public class Cliente {
         this.apellido = apellido;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
-
-    public void setCodigoPostal(String codigoPostal) {
-        this.codigoPostal = codigoPostal;
-    }
+   
 
 	public String getNombre() {
 		return nombre;
@@ -38,17 +26,15 @@ public class Cliente {
 		return apellido;
 	}
 
-	public String getDireccion() {
+	public Direccion getDireccion() {
 		return direccion;
 	}
 
-	public String getCiudad() {
-		return ciudad;
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
 	}
 
-	public String getCodigoPostal() {
-		return codigoPostal;
-	}
+	
 
     
 }
